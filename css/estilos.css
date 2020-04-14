@@ -1,0 +1,360 @@
+:root{
+	--dark: #000000;
+	--white:#ffffff;
+	--light-grey: #efefef;
+	--gold: #ecd5a7;
+}
+
+/* Inicio del Navegador */
+
+.navbar{
+	background-color: #4cbedd;
+	width: 100%;
+	margin: 0 auto;
+	height: 100px;
+}
+.bg-dark{
+	background-color:black !important;
+}
+
+.navbar-brand img{
+	width: 120px;
+	height: 100px;
+	margin-left: 40px;
+}
+
+.collapse{
+	margin-right: 40px;
+}
+
+.collapse li{
+	display: block;
+	padding: 14px 16px;
+}
+
+.collapse li:hover{
+	background-color: #676195;
+}
+
+.collapse a{
+	color: white;
+	font-size: 15px;
+	font-family: arial, bold;
+}
+
+
+
+/* Final del Navegador */
+
+/* Inicio de Slider */
+
+section {
+	padding: 6rem 0;
+}
+
+#slider{
+	padding: 0 0 0;
+}
+
+.slider-img{
+	width: 1000px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+/* Final de Slider */
+
+/* Inicio de Container 1 */
+
+.container-fluid{
+
+}
+.gif{
+	margin: 0 auto;
+}
+.container{
+	margin: 0 auto;
+}
+
+.container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: arial, regular;
+}
+
+.container p{
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: arial, regular;
+}
+
+.container img{
+	background-color:#ABEAFF;
+	margin: 0 auto;
+}
+
+.bg-light{
+	background-color: red;
+}
+
+.bg-light img{
+	width: 100%;
+	box-shadow: 5px 10px 8px 10px #888888;
+	}
+
+
+.col-md-6{
+	margin-top: 10px;
+}
+
+.col-md-4{
+	margin-top: 10px;
+}
+
+.content{
+	background-color: red;
+}
+
+.img-fluid{
+	width: 100%;
+	height: 100%;
+}
+
+.text-center{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Final de Container 1 */
+
+.container2{
+	width: 1080px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.grupo{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 100px;
+}
+
+.grupo img{
+	width: 150px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.grupo p{
+	text-align: center;
+	font-family: arial, regular;
+}
+
+.contenedor{
+	margin: 0 auto;
+}
+
+.contenedor h2{
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: arial, regular;
+}
+
+.contenedor iframe{
+	width: 1100px;
+	margin: 0 auto;
+}
+/* Inicio de quienes somos */
+
+.somos{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.somos img{
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+.somos-p{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.somos-p p{
+	font-size: 20px;
+}
+
+
+.container video{
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+	margin-top:-50px;
+	margin-bottom: 20px;
+}
+.cont-masajes{
+	width: 1180px;
+	height: 200px;
+	margin-bottom: -160px;
+	margin-top: -40px;
+}
+
+.cont-masajes img{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.productos{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+.productos img{
+	width: 500px;
+	height:300px;
+	float: right;
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.productos img:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	}
+
+.productos h3{
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: arial, regular;
+}
+
+.productos p{
+	font-family: arial, regular;
+
+}
+
+.productos2{
+	width: 660px;
+	height: 300px;
+}
+
+.productos2 h3{
+	margin-top: 40px;
+	font-family: arial, regular;
+}
+
+.productos2 p{
+	margin-left: 60px;
+	margin-right: 60px;
+	font-family: arial, regular;
+}
+
+.productos3 img{
+	width: 510px;
+	height: 300px;
+
+}
+
+/* Final de quienes somos */
+/* Inicio de contacto */
+
+.gif{
+
+}
+
+.gif img{
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-light button{
+	width: 80px;
+	background-color: red;
+	font-family: arial, regular;
+}
+
+
+
+
+
+
+/* Final de contacto */
+
+/* Inicio de galeria */
+
+.container-img{
+	width: 1500px;
+	height: 1500px;
+	background-color: red;
+	margin: 0 auto;
+}
+
+.img-galery{
+	width: 500px;
+	height: 300px;
+	display: inline-block;
+	background-color: blue;
+}
+
+.img-galery img{
+	width: 100%;
+	
+}
+
+/* Final de galeria */
+
+/* Inicio de Footer */
+
+.footer{
+	width: 100%;
+	height: 150px;
+	background-color: #4cbedd;
+}
+
+.footer p{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	font-family: arial, regular;
+}
+
+.footer-icon{
+	margin:0 auto;
+	width: 250px;
+}
+
+.footer ion-icon{
+	color: white;
+	margin: 0 auto;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+}
+
+/* Final de Footer */
+
+
+@media (max-width: 575.98px) {}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) { ... }
+
