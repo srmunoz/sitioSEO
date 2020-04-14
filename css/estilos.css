@@ -1,17 +1,37 @@
-:root{
-	--dark: #000000;
-	--white:#ffffff;
-	--light-grey: #efefef;
-	--gold: #ecd5a7;
+*{padding: 0;
+margin: 0;
 }
 
+h1{
+	text-align: center;
+	font-family: arial, regular;
+}
+
+h3{
+	text-align: center;
+	font-family: arial, regular;
+}
+
+h4{
+	text-align: center;
+	font-family: arial, regular;
+	margin-top: 10px;
+}
 /* Inicio del Navegador */
 
+.nav{
+	position: absolute;
+	z-index: 1;
+
+}
+
 .navbar{
-	background-color: #4cbedd;
 	width: 100%;
 	margin: 0 auto;
-	height: 100px;
+	height: 110px;
+	background-color: #4cbedd;
+	position: fixed;
+
 }
 .bg-dark{
 	background-color:black !important;
@@ -21,14 +41,16 @@
 	width: 120px;
 	height: 100px;
 	margin-left: 40px;
+	
 }
 
 .collapse{
-	margin-right: 40px;
+	margin-right: 60px;
 }
 
 .collapse li{
-	display: block;
+	
+	position: relative;
 	padding: 14px 16px;
 }
 
@@ -41,6 +63,15 @@
 	font-size: 15px;
 	font-family: arial, bold;
 }
+.collapse ul li a:hover .sub-content{
+	display: block;
+}
+
+.collapse ul li .sub-content{
+	display: none;
+	position: absolute;
+	background-color: red;
+}
 
 
 
@@ -49,17 +80,28 @@
 /* Inicio de Slider */
 
 section {
-	padding: 6rem 0;
+	padding: 5rem 0;
+	padding-top: 150px;
 }
 
-#slider{
+.slider{
+	width: 100%;
+	background-color: red;
+	width: 600px;
 	padding: 0 0 0;
+	
 }
 
 .slider-img{
-	width: 1000px;
-	height: 550px;
+	width: 100%;
+	height: 640px;
 	margin: 0 auto;
+	display: block;
+	object-fit: fill;
+}
+.slider-img img{
+	width: 100%;
+	height: auto;
 }
 
 /* Final de Slider */
@@ -67,6 +109,7 @@ section {
 /* Inicio de Container 1 */
 
 .container-fluid{
+	width: 100%;
 
 }
 .gif{
@@ -94,12 +137,12 @@ section {
 }
 
 .bg-light{
-	background-color: red;
+	margin-bottom: 15px;
 }
 
 .bg-light img{
 	width: 100%;
-	box-shadow: 5px 10px 8px 10px #888888;
+	box-shadow: 5px 10px 8px 6px #888888;
 	}
 
 
@@ -111,13 +154,10 @@ section {
 	margin-top: 10px;
 }
 
-.content{
-	background-color: red;
-}
 
 .img-fluid{
 	width: 100%;
-	height: 100%;
+	height:350px;
 }
 
 .text-center{
@@ -125,12 +165,19 @@ section {
 	text-align: center;
 }
 
+.text-center ion-icon{
+	margin-left: 6px;
+}
+
 /* Final de Container 1 */
+
+/* Inicio de Container 2 */
 
 .container2{
 	width: 1080px;
 	height: 200px;
 	margin: 0 auto;
+	margin-top: -80px;
 }
 
 .grupo{
@@ -139,6 +186,7 @@ section {
 	display: inline-block;
 	margin: 0 auto;
 	margin-left: 100px;
+	text-align: center;
 }
 
 .grupo img{
@@ -147,9 +195,15 @@ section {
 	margin-left: 10px;
 }
 
-.grupo p{
-	text-align: center;
+.grupo span{
 	font-family: arial, regular;
+	text-decoration: none;
+	color: black;
+}
+
+.grupo span:hover{
+	text-decoration: none;
+	text-decoration-line: none;
 }
 
 .contenedor{
@@ -166,37 +220,34 @@ section {
 	width: 1100px;
 	margin: 0 auto;
 }
+
+/* Final de Container 2 */
+
 /* Inicio de quienes somos */
 
-.somos{
-	width: 100%;
-	height: 200px;
-	margin-bottom: 20px;
+.content-somos{
+	width: 1000px;
+	height: 450px;
+	margin: 0 auto;
+	background-color: #f4f2f2;
+	border-radius: 10px;
+	margin-top: -30px;
+	margin-bottom: 50px;
 }
 
-.somos img{
-	width: 200px;
-	height: 200px;
-	display: block;
+.content-somos h1{
+	padding-top: 20px;
 }
 
 .somos-p{
-	width: 600px;
+	width: 800px;
 	margin: 0 auto;
 }
 
 .somos-p p{
-	font-size: 20px;
+	font-size: 16px;
 }
 
-
-.container video{
-	margin: 0 auto;
-	width: 100%;
-	height: 400px;
-	margin-top:-50px;
-	margin-bottom: 20px;
-}
 .cont-masajes{
 	width: 1180px;
 	height: 200px;
@@ -216,6 +267,7 @@ section {
 	height: 300px;
 	margin-bottom: 40px;
 	display: flex;
+	margin-top: 40px;
 }
 
 .productos img{
@@ -250,6 +302,12 @@ section {
 	height: 300px;
 }
 
+.productos h2{
+	text-align: center;
+	margin-top: 40px;
+	font-family: arial, regular;
+}
+
 .productos2 h3{
 	margin-top: 40px;
 	font-family: arial, regular;
@@ -268,50 +326,71 @@ section {
 }
 
 /* Final de quienes somos */
+
 /* Inicio de contacto */
 
-.gif{
-
+.content-padre{
+	height: 438px;
+	width: 100%;
+	display: flex;
 }
 
-.gif img{
+.content{
+	width: 800px;
+	height: 438px;
 	display: block;
+}
+
+.content h4{
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.datos{
+	background-image: -webkit-linear-gradient(left, #4cbedd , #676195);
+}
+
+.content-info{
+	width: 510px;
+	height: 380px;
+}
+
+.content-datos{
+	width: 400px;
+	height: 80px;
+	margin-bottom: 15px;
 	margin: 0 auto;
 }
 
-.btn-light button{
-	width: 80px;
-	background-color: red;
-	font-family: arial, regular;
+.content-datos ion-icon{
+	width: 50px;
+	height: 30px;
+	margin-top: 10px;
 }
 
+.content-datos span{
+	color: white;
+	padding-top: 20px;
+	margin: 0 auto;
+}
 
+.content-datos p{
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+}
 
-
+.contenedor3{
+	margin-bottom: 30px;
+}
 
 
 /* Final de contacto */
 
 /* Inicio de galeria */
 
-.container-img{
-	width: 1500px;
-	height: 1500px;
-	background-color: red;
-	margin: 0 auto;
-}
-
-.img-galery{
-	width: 500px;
-	height: 300px;
-	display: inline-block;
-	background-color: blue;
-}
-
-.img-galery img{
-	width: 100%;
-	
-}
 
 /* Final de galeria */
 
@@ -320,15 +399,19 @@ section {
 .footer{
 	width: 100%;
 	height: 150px;
-	background-color: #4cbedd;
+	background-image: -webkit-linear-gradient(left, #4cbedd , #676195);
+	text-align: center;
 }
 
-.footer p{
+.footer span{
+	width: 500px;
 	color: white;
-	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 	margin-bottom: 20px;
 	font-family: arial, regular;
+	display: block;
+	margin: 0 auto;
 }
 
 .footer-icon{
