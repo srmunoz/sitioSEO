@@ -200,6 +200,7 @@ section {
 .grupo span{
 	font-family: 'Poppins', regular;
 	text-decoration: none;
+	text-decoration-line: none;
 	color: black;
 }
 
@@ -229,6 +230,7 @@ section {
 
 section h1{
 	text-align: center;
+	font-family: 'Poppins', bold;
 }
 .content-somos{
 	width: 1000px;
