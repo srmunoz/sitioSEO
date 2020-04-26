@@ -374,9 +374,11 @@ section h1{
 }
 
 .content-datos ion-icon{
+	color: white;
 	width: 50px;
 	height: 30px;
 	margin-top: 10px;
+		
 }
 
 .content-datos span{
@@ -398,10 +400,6 @@ section h1{
 
 /* Final de contacto */
 
-/* Inicio de galeria */
-
-
-/* Final de galeria */
 
 /* Inicio de Footer */
 
